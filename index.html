@@ -15,25 +15,25 @@
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="style.css">
     <style>
     body {
         position: relative;
+        opacity:0;
+        transition: opacity 2s;
+        -webkit-transition: opacity 2s; /* Safari */
     }
-    #section1 {padding-top:50px;color: #fff; background-color: grey;}
+    #section1 {padding-top:50px;color: #fff; background-color: #303030;}
     #section2 {padding-top:50px;color: #fff; background-color: #673ab7;}
     #section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
     #section4 {padding-top:50px;color: #fff; background-color: #00bcd4;}
 
-    #myNavbar{
-      width: ;
-    }
-
     .nav.navbar-nav li a{
-      width:auto;
+      width : auto;
     }
 
     #section2,#section3,#section4{
-      padding-top : 0px;
+      padding-top : 20px;
     }
 
     .section-content{
@@ -44,7 +44,7 @@
 
   </head>
   <!-- body -->
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="document.body.style.opacity='1'">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -72,7 +72,7 @@
   <div id="section1" class="container-fluid">
     <div id="section1-frame" align="center">
       <div class="section-content" >
-      <h1>노승훈의 포트폴리오 입니다.</h1>
+      <h1 class="mast__title js-spanize" style="font-size:36pt">Developer 노승훈의 포트폴리오 입니다.</h1>
       </div>
     </div>
   </div>
@@ -140,7 +140,8 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="smoothscroll.js"></script>
+  <script type="text/javascript" src="SmoothSpyScroll.js"></script>
+  <script type="text/javascript" src="FontAnimation.js"></script>
   <script>
     var sectionHeight = screen.height - 100;
     var sectionArray = ["section1"];
