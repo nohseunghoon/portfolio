@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <!-- head -->
+  <head>
+    <meta charset="utf-8">
+    <title>ScrollSpy test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <style>
+    body {
+        position: relative;
+    }
+    #section1 {padding-top:50px;color: #fff; background-color: grey;}
+    #section2 {padding-top:50px;color: #fff; background-color: #673ab7;}
+    #section3 {padding-top:50px;color: #fff; background-color: #ff9800;}
+    #section4 {padding-top:50px;color: #fff; background-color: #00bcd4;}
+
+    #myNavbar{
+      width: ;
+    }
+
+    .nav.navbar-nav li a{
+      width:auto;
+    }
+    </style>
+
+  </head>
+  <!-- body -->
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Portfolio</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">About</a></li>
+            <li><a href="#section3">Project</a></li>
+            <li><a href="#section4">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="section1" class="container-fluid">
+    <div id="section1-frame" align="center">
+      <div id="section1-content" >
+      <h1>노승훈의 포트폴리오 입니다.</h1>
+      </div>
+    </div>
+  </div>
+  <div id="section2" class="container-fluid">
+    <h1>Section 2</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="section3" class="container-fluid">
+    <h1>Section 3</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+  <div id="section4" class="container-fluid">
+    <h1>Section 4 Submenu 1</h1>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  </div>
+
+  <script type="text/javascript" src="smoothscroll.js"></script>
+  <script>
+    var sectionHeight = screen.height - 100;
+    var sectionArray = ["section1","section2","section3","section4"];
+    for (var value of sectionArray){
+      document.getElementById(value).style.height = sectionHeight+"px";
+    }
+
+    $(document).ready(function(){
+      var section1ContentHeight = $('#section1-content').height();
+      const topbarHeight = $(".navbar-fixed-top").height();
+      document.getElementById("section1-frame").style.marginTop = (sectionHeight/2 - topbarHeight - section1ContentHeight/2)+"px";
+    });
+  </script>
+  </body>
+</html>
