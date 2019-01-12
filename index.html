@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/tab_project.css">
+    <link rel="stylesheet" href="css/tab_about.css">
     <link rel="stylesheet" href="css/font_animation.css">
     <style>
     body {
@@ -40,12 +41,19 @@
     }
 
     #section2,#section3,#section4{
-      padding:20px;
+      padding : 20px 0px 20px 0px;
     }
 
     .section-content{
-      margin : 50px;
+      margin-top : 50px;
+      margin-bottom : 50px;
     }
+
+    #section1 .section-content {
+      margin-left : 30px;
+      margin-right: 30px;
+    }
+
 
     </style>
 
@@ -82,10 +90,10 @@
   <div id="section2" class="container-fluid">
     <div class="section-content" align="center">
     <h1 align="center" class="glow">About Me</h1>
-      <div style="float:right; left:-50%; position:relative; margin:15px; padding:10px;">
-        <span style="float:left; left:50%; position:relative; padding-right:10px;"><img src="images/profile.jpg"></span>
-        <span style="float:left; left:50%; position:relative; font-size:15pt; padding:10px;" align="left">
-
+      <div id="profile">
+        <span><img src="images/profile.jpg"></span>
+        <span>
+          
           <p>이름    : 노승훈</p>
           <p>주소 : 서울시 강서구 화곡동</p>
           <p>취미 : 노래, 게임, 컴퓨터</p>
@@ -95,7 +103,7 @@
 
         </span>
       </div>
-      <div style="margin:20px; font-size:12pt; padding-top:290px;">
+      <div id="introduce">
       <p>나는 그대를 뒤로한 채로 우리 사랑을 놓아요
       차오르는 추억을 헝클어뜨려
       </p>

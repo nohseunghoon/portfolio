@@ -1,0 +1,49 @@
+@media screen and (min-width: 769px) {
+  #profile{
+    float:right;
+    left:-50%;
+    position:relative;
+    margin:15px;
+    padding:10px;
+  }
+
+  #profile span:nth-child(1){
+    float:left;
+    left:50%;
+    position:relative;
+    padding-right:10px;
+  }
+
+  #profile span:nth-child(2){
+    float:left;
+    left:50%;
+    position:relative;
+    font-size:15pt;
+    padding:10px;
+    text-align: left;
+  }
+
+  #introduce{
+    margin:20px;
+    font-size:12pt;
+    padding-top:290px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #profile{
+    margin:30px;
+  }
+
+  #profile span:nth-child(2){
+    font-size:13pt;
+    text-align: center;
+  }
+
+  #introduce{
+    margin:10px;
+    font-size:12pt;
+  }
+
+}
