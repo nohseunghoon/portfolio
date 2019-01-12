@@ -15,7 +15,13 @@
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Link Swiper's CSS -->
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/tab_project.css">
+    <link rel="stylesheet" href="css/font_animation.css">
     <style>
     body {
         position: relative;
@@ -77,8 +83,8 @@
     <div class="section-content" align="center">
     <h1 align="center" class="glow">About Me</h1>
       <div style="float:right; left:-50%; position:relative; margin:15px; padding:10px;">
-        <span style="float:left; left:50%; position:relative; padding-right:10px;"><img src="profile.jpg"></span>
-        <span style="float:left; left:50%; position:relative; font-size:15pt; padding-top:10px;" align="left">
+        <span style="float:left; left:50%; position:relative; padding-right:10px;"><img src="images/profile.jpg"></span>
+        <span style="float:left; left:50%; position:relative; font-size:15pt; padding:10px;" align="left">
 
           <p>이름    : 노승훈</p>
           <p>주소 : 서울시 강서구 화곡동</p>
@@ -89,7 +95,7 @@
 
         </span>
       </div>
-      <div style="margin:20px; font-size:12pt; padding-top:280px;">
+      <div style="margin:20px; font-size:12pt; padding-top:290px;">
       <p>나는 그대를 뒤로한 채로 우리 사랑을 놓아요
       차오르는 추억을 헝클어뜨려
       </p>
@@ -132,11 +138,64 @@
   </div>
   <div id="section3" class="container-fluid" align="center">
     <div class="section-content">
-    <h1>Project</h1>
-    <p style="font-size:20pt;">Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <h1 class="glow">Project</h1><br><br>
+
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="blog-slider__pagination"></div>
+      </div>
+
     </div>
   </div>
+
   <div id="section4" class="container-fluid" align="center">
     <div class="section-content">
     <h1 class="glow">Contact Me!</h1><br>
@@ -144,9 +203,9 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="SmoothSpyScroll.js"></script>
-  <script type="text/javascript" src="FontAnimation.js"></script>
-  <script type="text/javascript" src="Home.js"></script>
-
+  <script type="text/javascript" src="js/smooth_spyscroll.js"></script>
+  <script type="text/javascript" src="js/font_animation.js"></script>
+  <script type="text/javascript" src="js/tab_home.js"></script>
+  <script type="text/javascript" src="js/tab_project.js"></script>
   </body>
 </html>
