@@ -1,6 +1,6 @@
 //폰트크기, 글자위치, 배경사이즈, 홈섹션크기 등을 세팅하는 함수
 function settingHomeLayout(){
-  $("#section1 h1").css("font-size", 10 + $(window).width()/80 + "pt");
+  $("#section1 h1").css("font-size", 9 + $(window).width()/80 + "pt");
   sectionHeight = $(window).height();
   ContentHeight = $('#section1 .section-content h1').height();
   document.getElementById("section1").style.height = sectionHeight+"px";
