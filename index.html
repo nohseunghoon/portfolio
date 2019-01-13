@@ -3,7 +3,7 @@
   <!-- head -->
   <head>
     <meta charset="utf-8">
-    <title>Hoon's Portfolio</title>
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- JQuery -->
@@ -30,7 +30,7 @@
         transition: opacity 2s;
         -webkit-transition: opacity 2s; /* Safari */
     }
-    #section1 {padding-top:50px;color: #fff;
+    #section1 {padding-top:50px;color: #fff; background-size: contain; background-repeat: no-repeat;
     background-image: url('https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')}
     #section2 {padding-top:50px;color: #fff; background-color: dimgrey;}
     #section3 {padding-top:50px;color: #000; background-color: whitesmoke;}
@@ -93,7 +93,7 @@
       <div id="profile">
         <span><img src="images/profile.jpg"></span>
         <span>
-          
+
           <p>이름    : 노승훈</p>
           <p>주소 : 서울시 강서구 화곡동</p>
           <p>취미 : 노래, 게임, 컴퓨터</p>
@@ -153,48 +153,76 @@
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
 
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg" alt="">
+              <img src="images/blow.png" alt="">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">26 December 2019</span>
-              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-              <a href="#" class="blog-slider__button">READ MORE</a>
+              <span class="blog-slider__code">2015.08.31 ~ 2016.05.30</span>
+              <div class="blog-slider__title">Blow</div>
+              <div class="blog-slider__text">
+                <u>AndroidStudio, MySQL, PHP, C#, 호스트 서버(Cafe24), 포토샵</u><br><br>
+                학교 졸업작품으로 만든 앱으로 익명의 사용자들과 소통할 수 있는 위치기반 SNS 입니다.<br>
+                익명으로 글을 게시할 수 있으며, 원하는 글을 검색할 수 있고, 현재 내 위치를 기반으로 반경거리를
+                설정하는 기능이 있어 원하는 거리의 글들을 모아서 정렬할 수 있습니다.
+              </div>
+              <div class="blog-slider__button">
+                <a href="https://drive.google.com/open?id=0B9cRhhKMVM6gREZRYXBtcHljZUU" >SOURCE</a>&nbsp&nbsp/&nbsp&nbsp
+                <a href="https://youtu.be/S3NqsqdWniQ" >VIDEO</a>
+              </div>
             </div>
           </div>
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg" alt="">
+              <img src="images/game.jpg" alt="">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">26 December 2019</span>
-              <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-              <a href="#" class="blog-slider__button">READ MORE</a>
+              <span class="blog-slider__code">2016.05.01 ~ 2016.06.06</span>
+              <div class="blog-slider__title">Simpson&Donut</div>
+              <div class="blog-slider__text">
+                <u>VisualStudio Win32 C++(Direct2D), 포토샵</u><br><br>
+                학과 전공과목 게임프로그래밍 시간에 진행한 개인 프로젝트 입니다.<br>
+                마우스를 클릭하면 비행기에서 도넛이 떨어지게 되며, 그 도넛을 하나씩 쌓아올려 도넛탑을 만드는 게임입니다.
+              </div>
+              <div class="blog-slider__button">
+                <a href="https://drive.google.com/open?id=1GirAWAXtu1U-iTytt_NfmQjYCFEd3MTR" >SOURCE</a>
+              </div>
             </div>
           </div>
 
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+              <img src="images/convenientStore.png" alt="">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">26 December 2019</span>
-              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-              <a href="#" class="blog-slider__button">READ MORE</a>
+              <span class="blog-slider__code">2017.05.17 ~ 2017.05.26</span>
+              <div class="blog-slider__title">ConvenientStore</div>
+              <div class="blog-slider__text">
+                <u>EclipseJavaEE(awt, swing)</u><br><br>
+                주요 편의점 3사의 행사상품들을 종합해서 보여주는 윈도우 기반 프로그램입니다. 주요 기능으로
+                점포 검색, 관심점포 설정, 재고파악, 장바구니, 최근물품 히스토리, 진행이벤트 목록 등이 있습니다.
+              </div>
+              <div class="blog-slider__button">
+                <a href="https://drive.google.com/open?id=1V2tRStnx3jWv1fDimm3P8J3cTYoebKwj" >SOURCE</a>&nbsp&nbsp/&nbsp&nbsp
+                <a href="https://youtu.be/7mmRc7wHt90" >VIDEO</a>
+              </div>
             </div>
           </div>
 
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg" alt="">
+              <img src="images/wooridoori.jpg" alt="">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">26 December 2019</span>
-              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-              <a href="#" class="blog-slider__button">READ MORE</a>
+              <span class="blog-slider__code">2017.08.09 ~ 2017.09.08</span>
+              <div class="blog-slider__title">Woori-Doori</div>
+              <div class="blog-slider__text">
+                <u>Spring, JavaScript, JQuery, Maven, MyBatis, MySql, Github</u><br><br>
+                여러 관광지들을 소개하고, 추천 및 가이드 매칭을 할 수 있는 여행 가이드 웹 사이트입니다.
+                마이크로소프트의 <a href="https://www.bing.com/">https://www.bing.com</a> 의 디자인을 모티브로 구현했습니다.
+              </div>
+              <div class="blog-slider__button">
+                <a href="https://github.com/akacci/wooridoori">SOURCE</a>&nbsp&nbsp/&nbsp&nbsp
+                <a href="https://drive.google.com/open?id=1SBr_Soe65MwkXQgbrtl-VUn5n-oPt2PZ" >PPT</a>
+              </div>
             </div>
           </div>
         </div>
